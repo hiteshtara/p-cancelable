@@ -4,13 +4,11 @@
 
 Useful for animation, loading resources, long-running async computations, async iteration, etc.
 
-
 ## Install
 
 ```
 $ npm install p-cancelable
 ```
-
 
 ## Usage
 
@@ -47,7 +45,6 @@ setTimeout(() => {
 	cancelablePromise.cancel();
 }, 10000);
 ```
-
 
 ## API
 
@@ -111,7 +108,6 @@ const promise = fn('input'); //=> PCancelable
 promise.cancel();
 ```
 
-
 ## FAQ
 
 ### Cancelable vs. Cancellable
@@ -122,14 +118,8 @@ promise.cancel();
 
 ~~It's still an early draft and I don't really like its current direction. It complicates everything and will require deep changes in the ecosystem to adapt to it. And the way you have to use cancel tokens is verbose and convoluted. I much prefer the more pragmatic and less invasive approach in this module.~~ The proposal was withdrawn.
 
-
 ## Related
 
-- [p-progress](https://github.com/sindresorhus/p-progress) - Create a promise that reports progress
-- [p-lazy](https://github.com/sindresorhus/p-lazy) - Create a lazy promise that defers execution until `.then()` or `.catch()` is called
-- [More…](https://github.com/sindresorhus/promise-fun)
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+* [p-progress](https://github.com/sindresorhus/p-progress) - Create a promise that reports progress
+* [p-lazy](https://github.com/sindresorhus/p-lazy) - Create a lazy promise that defers execution until `.then()` or `.catch()` is called
+* [More…](https://github.com/sindresorhus/promise-fun)
