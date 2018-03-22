@@ -44,6 +44,7 @@
 		"xo": "*"
 	},
 	"dependencies": {
+		"get-stdin": "^6.0.0",
 		"ps-list": "^4.0.0"
 	}
 }
