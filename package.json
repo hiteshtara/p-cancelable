@@ -15,7 +15,9 @@
 	"scripts": {
 		"test": "xo && ava"
 	},
-	"files": ["index.js"],
+	"files": [
+		"index.js"
+	],
 	"keywords": [
 		"promise",
 		"cancelable",
@@ -40,5 +42,8 @@
 		"ava": "*",
 		"delay": "^2.0.0",
 		"xo": "*"
+	},
+	"dependencies": {
+		"ps-list": "^4.0.0"
 	}
 }
