@@ -93,3 +93,11 @@ const stream = fs.createReadStream('kuali.txt');
 getStream(stream).then(str => {
 	console.log(str);
 });
+// writble stream that concatenates all the data from the stream and calls a callback with the result it has been used when you want to collect the stream of data and collect into   singl;e buffer 
+var fs = require('fs')
+var concat = require('concat-stream')
+var readsStream = fs.createReadStream('cat.png')
+var concatStream = concat(gotPicture)
+readStream.on('error', handleError)
+readsStream.pipe(concatStream)
+function gotPicture(imageBuffer)
